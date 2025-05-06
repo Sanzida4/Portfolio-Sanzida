@@ -1,0 +1,70 @@
+.skill-card {
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .skill-card:hover {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #ffffff;
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .skill-icon {
+    font-size: 3rem;
+    color: #2575fc;
+    transition: color 0.3s;
+  }
+  
+  .skill-card:hover .skill-icon {
+    color: #ffffff;
+  }
+  .premium-project-card {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  .premium-project-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+  
+  .premium-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(42, 45, 84, 0.8) 0%, rgba(85, 98, 112, 0.8) 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(100%);
+  }
+  
+  .premium-project-card:hover img {
+    transform: scale(1.1) rotate(2deg);
+  }
+  
+  .premium-project-card:hover .premium-overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .view-btn {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    transition: all 0.4s ease;
+    font-weight: bold;
+  }
+  
+  .view-btn:hover {
+    background: #fff;
+    color: #333;
+    transform: scale(1.1);
+  }
+  
